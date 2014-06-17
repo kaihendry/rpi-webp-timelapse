@@ -1,0 +1,9 @@
+[Unit]
+Description=Camera snapshot
+
+[Service]
+Restart=always
+ExecStart=/home/hendry/camera/snapshot.sh
+
+[Install]
+WantedBy=multi-user.target
