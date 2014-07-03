@@ -1,3 +1,4 @@
+# /etc/systemd/system/camera.service
 [Unit]
 Description=Camera snapshot
 
