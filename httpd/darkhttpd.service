@@ -1,0 +1,11 @@
+#/etc/systemd/system/darkhttpd.service
+
+[Unit]
+Description=Darkhttpd Webserver
+
+[Service]
+ExecStart=/usr/bin/darkhttpd /srv/http --daemon --mimetypes /srv/http/extramime --index index.webp
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
